@@ -1,0 +1,12 @@
+#box {
+  height: 350px;
+  width: 350px;
+  border-style: solid;
+  border-width: thin;
+  border-radius:25px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 10px
+}
