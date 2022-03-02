@@ -11,14 +11,23 @@
   <div id="react-container"></div>
   <script type="text/babel">
 
+  class App extends React.Component{
+    render(){
+      return(
+        <>
+        <Header/>
+        <Content/>
+        <Footer/>
+        </>
+      )
+    }
+  }
     class Header extends React.Component{
       render(){
         return(
-          <div>
-          <h1>Alpha 2022! </h1>
-          <Content/>
-          <Footer/>
-          </div>
+          <>
+            <h1>Alpha 2022! </h1>
+          </>
         )
       }
     }
@@ -27,7 +36,8 @@
       render() {
         return (
         <>
-        <h2>Names</h2>
+        <h3>Names</h3>
+        <ul>
         <li>Alexis Ranga</li>
         <li>Arnold Laoang</li>
         <li>Athen Park</li>
@@ -51,6 +61,7 @@
         <li>Stevie Mitchell</li>
         <li>Tiffany Do</li>
         <li>Zena Nguyen</li>
+        </ul>
         </>
         )
       }
@@ -60,13 +71,16 @@
       render() {
         return(
         <>
-        <p>Jose - Marc - Stevie</p>
+        <footer>
+            Jose - Marc - Stevie
+        </footer>
         </>
       )
       }
     }
+
     const domContainer = document.querySelector('#react-container')
-    ReactDOM.render(<Header />, domContainer)
+    ReactDOM.render(<App />, domContainer)
   </script>
 </body>
 </html>
