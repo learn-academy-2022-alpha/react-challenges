@@ -12,71 +12,68 @@
 
   <div id="react-container"></div>
 
-
-
   <script type="text/babel">
     class App extends React.Component{
       render(){
         return(
           <>
-          <Header />
-</>
-)
-}
-}
+            <Header />
+            <List />
+            <Footer />
+          </>
+        )
+      }
+    }
 
-        class Content extends React.Component{
-            render(){
-              return(
-              <>
-<h1>
-  ALPHA COHORT 2022
-        </h1>
-        </>
-)
-}
-}
-        class App extends React.Component{
-          render(){
-            return(
-<>
+    class Header extends React.Component{
+      render(){
+        return(
+          <>
+            <h1>Alpha 2022</h1>
+          </>
+        )
+      }
+    }
 
-<ul>
-  <li> Omar </li>
-  <li> Curtis </li>
-  <li> Ramon </li>
-  <li> Mark </li>
-  <li> Jose </li>
-  <li> Stevie </li>
-  <li> Ryan </li>
-  <li> Jennice </li>
-  <li> Dane </li>
-  <li> Arnold </li>
-  <li> Jacob </li>
-  <li> Nico </li>
-  <li> Keelan </li>
-  <li> Michael </li>
-  <li> Carlos </li>
-  <li> Marriana </li>
-  <li> Kat </li>
-  <li> Kendra </li>
-  <li> Nate </li>
-  <li> Tiffany </li>
-  <li> Paula </li>
-  <li> Alexis </li>
-  </ul>
-</>
+    class List extends React.Component{
+      render(){
+        return(
+          <>
+          <ul>
+            <li> Omar </li>
+            <li> Curtis </li>
+            <li> Ramon </li>
+            <li> Mark </li>
+            <li> Jose </li>
+            <li> Stevie </li>
+            <li> Ryan </li>
+            <li> Jennice </li>
+            <li> Dane </li>
+            <li> Arnold </li>
+            <li> Jacob </li>
+            <li> Nico </li>
+            <li> Keelan </li>
+            <li> Michael </li>
+            <li> Carlos </li>
+            <li> Marriana </li>
+            <li> Kat </li>
+            <li> Kendra </li>
+            <li> Nate </li>
+            <li> Tiffany </li>
+            <li> Paula </li>
+            <li> Alexis </li>
+          </ul>
+          </>
+        )
+      }
+    }
 
-
-class App extends React.Component{
-  render(){
-    return(
-<>
-  <footer>
-    Omar AND Curtis
-    </footer>
-</>
-
+    class Footer extends React.Component{
+      render(){
+        return(
+          <>
+            Omar and Curtis
+          </>
         )
       }
     }
