@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hubballi&family=Lato&family=Press+Start+2P&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <title>Intro to React</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #25976D;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h3 {
+            font-family: 'Lato', sans-serif;
+        }
+
+        ul {
+            font-family: 'Hubballi', cursive;
+            margin: auto;
+            padding: 0;
+            width: fit-content;
+        }
+
+        .list-item {
+            display: flex;
+            justify-content: left;
+        }
+
+        li {
+            text-align: left;
+            list-style-type: none;
+            font-size: 18px;
+        }
+
+        img {
+            width: 15px;
+            margin-right: 5px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0%;
+            font-family: 'Source Code Pro', monospace;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+
+        const classMates = [
+            'Curtis',
+            'Jacob',
+            'Ramon',
+            'Ryan',
+            'Athen',
+            'Keelan',
+            'Marc',
+            'Michael',
+            'Tiffany',
+            'Dane',
+            'Arnold',
+            'Jose',
+            'Nico',
+            'Stevie',
+            'Alexis',
+            'Kat',
+            'Kendra',
+            'Carlos',
+            'Omar',
+            'Jennice',
+            'Paula',
+            'Mariana',
+            'Nathaniel'
+        ]
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <>
+                        <Header />
+                        <ClassMates />
+                        <Footer />
+                    </>
+                )
+            }
+        }
+
+        class Header extends React.Component {
+            render() {
+                return <h1>Alpha 2022</h1>
+            }
+        }
+
+        class ClassMates extends React.Component {
+            render() {
+                return (
+                    <>
+                        <h3>Everyone in this class:</h3>
+                        <ul>
+                            {
+                                classMates.map((v, i) => (
+                                    <div key={i} className='list-item'>
+
+                                        <li>{v}</li>
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </>
+                )
+            }
+        }
+
+        class Footer extends React.Component {
+            render() {
+                return <footer>Made by: Paula & Dane</footer>
+            }
+        }
+
+        const domContainer = document.querySelector('#react-container')
+        ReactDOM.render(<App />, domContainer)
+    </script>
+</body>
+
+</html>
