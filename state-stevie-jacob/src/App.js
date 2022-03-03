@@ -20,7 +20,6 @@ class App extends Component {
                     loop
                     
                 style={{
-
                         width: "100%",
                         top: "50%",
                         height: "100%",
