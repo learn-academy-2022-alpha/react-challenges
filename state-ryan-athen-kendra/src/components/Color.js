@@ -3,21 +3,29 @@ class Color extends Component {
     constructor(props){
         super(props)
         this.state = {
-            color: "white"
+            colors: ["green", "blue", "yellow", "red", "purple", "orange"]
+            count: 0
         }
     }
     colorChanger = () => {
-        this.setState({color: this.state.color})
+      if(count > 5){
+        this.setState({this.state.colors[0]})
+      } else{
+        this.setState({count: this.state.count + 1})
+      }
     }
 
     render() {
       return (
        <>
-        <div id="square" onClick={this.colorChanger}>
+        <div id="square"
+        <button onClick={this.colorChanger}>
+            Click this Button
+        </button>
         </div>
        </>
       )
     }
   }
-  
+
   export default Color
