@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Overview](https://github.com/learn-academy-2022-alpha/react-challenges/blob/state-s-jv/state-stevie-jacob/overview.gif)
 
 ## Available Scripts
 
