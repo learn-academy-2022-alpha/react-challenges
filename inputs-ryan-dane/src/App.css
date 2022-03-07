@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  filter: drop-shadow(3px 6px 4px black)
+}
+input {
+  margin-top: 50px;
+  background-color: transparent;
+  color: white;
+  width: 40%;
+  height: 60%;
+}
+input::placeholder{
+  color: rgb(233, 232, 232);
+  filter: drop-shadow(3px 6px 4px black)
+}
+
+
