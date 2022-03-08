@@ -13,7 +13,6 @@ input {
   background-color: transparent;
   color: white;
   width: 40%;
-  height: 60%;
 }
 input::placeholder{
   color: rgb(233, 232, 232);
