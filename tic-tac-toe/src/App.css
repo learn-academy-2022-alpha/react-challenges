@@ -1,0 +1,13 @@
+.square{
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+#layout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
+  margin: 0 auto;
+
+}
