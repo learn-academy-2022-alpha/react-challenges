@@ -9,10 +9,11 @@ class App extends Component {
       mcDonalds: ["chicken nuggets", "french fries", "big mac", "sweet tea", "sprite", "mcrib", "mcchicken", "coke"],
       inNOut: ["hamburgers", "animal fries", "milkshakes", "french fries", "double doubles", "fountain drink"],
       jackInTheBox: ["tacos", "curly fries", "munchie meal", "iced coffee", "jumbo jack", "crispy chicken strips", "spicy chicken sandwich"],
-      // name: [ item: "nuggets", price: 1.00
-      //         item: "soda", price: 1.50
-      //         item: "big mac", price: 4.50
-      //       ],
+      // mcDonalds: {
+      //               item1: "nuggets", price: 1.00,
+      //               item2: "soda", price: 1.50,
+      //               item3: "big mac", price: 4.50
+      //             },
       cart: [],
       currentCost: 0
     }
