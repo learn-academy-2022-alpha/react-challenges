@@ -1,0 +1,27 @@
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/01/18/17/hot-dog-2030967_1280.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  filter: drop-shadow(3px 6px 4px black);
+  color: white;
+  font-size: large;
+  margin: 50px 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+svg {
+  margin-right: 4px;
+}
+
+h3, p {
+  margin-left: 40px;
+}
