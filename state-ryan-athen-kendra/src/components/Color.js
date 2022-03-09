@@ -48,11 +48,8 @@ class Color extends Component {
     render() {
       return (
        <>
-        <div id="square">
+        <div id="square" onClick={this.colorChanger}>
         <p> Color: {this.state.colors} </p>
-        <button onClick={this.colorChanger}>
-            Click this Button
-        </button>
         </div>
        </>
       )
