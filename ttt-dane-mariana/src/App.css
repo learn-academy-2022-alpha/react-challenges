@@ -3,12 +3,14 @@ h1 {
 }
 .square{
     width:200px;
-height:200px;
-border: 1px solid black;
+    height:200px;
+    border: 1px solid black;
+    font-size: 150px;
+    text-align: center;
 }
  .gameboard {
-display: flex;
-flex-wrap: wrap;
-width: 620px;
-margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
 }
