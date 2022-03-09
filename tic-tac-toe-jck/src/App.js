@@ -39,10 +39,9 @@ class App extends Component{
           {this.state.squares.map((value,index)=>{
             return (
             <Square
-              value = {value}
-              index = {index}
-              {...this.state.handleClick}
-            />
+                value = {value}
+                index = {index}
+              />
             )
           })}
         </div>
