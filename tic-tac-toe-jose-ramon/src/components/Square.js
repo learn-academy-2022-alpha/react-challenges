@@ -3,13 +3,14 @@ import React, { Component } from 'react'
 class Square extends Component{
 
 click = () => {
-    alert("ay")
+    this.props.ticTac(this.props.index)
 }
 
   render(){
     return(
       <>
-        <div className="square" onClick={this.click}>{this.props.value}
+        <div className="square" onClick={this.click}>
+            {this.props.value}
         </div>
       </>
     )
