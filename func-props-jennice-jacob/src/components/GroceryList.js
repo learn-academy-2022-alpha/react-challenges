@@ -7,7 +7,7 @@ class GroceryList extends Component {
             {this.props.cartItem.map((item,index) => {
             return(
                 <li key={index}>
-                <button onClick={() => {this.props.addItem(this.item)}}>{item}</button>
+                <button onClick={() => {this.props.addItem(item)}}>{item}</button>
                 </li>
             )})}    
             </>

@@ -36,7 +36,7 @@ class App extends Component{
   }
 }
 
-addItem = () => {
+addItem = (item) => {
   this.setState ({
     cart: [...this.state.cart,item]
   })
