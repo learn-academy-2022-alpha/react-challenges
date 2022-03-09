@@ -25,19 +25,22 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      squares: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+      squares: [0, 0, 0, 0, 0, 0, 0, 0, 0],
     }
   }
 
+  handleGame = () => {
+    alert ("yo")
+  }
 
 
   render(){
     return(
       <>
         <h1>Tic Tac Toe</h1>
-        <div id="gameboard">
+        <div className="gameboard">
           {this.state.squares.map((value,index)=>{
-            return (
+            return(
             <Square
                 value = {value}
                 index = {index}

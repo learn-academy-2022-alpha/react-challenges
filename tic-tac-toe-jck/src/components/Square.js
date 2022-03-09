@@ -4,12 +4,12 @@ class Square extends Component{
   handleClick = () => {
     this.props.handleGame(this.props.index)
   }
+
   render(){
     return(
       <>
-        <div className="square" onClick={this.handleClick}>
-            X
-          {this.props.value}
+        <div className="square" onClick={this.handleClick} handleGame = {this.handleGame}>
+            {this.props.value}
         </div>
       </>
     )
