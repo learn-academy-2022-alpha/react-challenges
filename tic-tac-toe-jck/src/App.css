@@ -1,12 +1,17 @@
-.square {
-  border: 2px solid black;
-  width: 100px;
-  height: 100px;
+.header {
+  text-align: center;
 }
 
-.gameboard {
-  display: flex;
-  flex-wrap: wrap;
-  width: 620px;
-  margin: 0 auto;
+.square {
+  border: .5px solid black;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
 }

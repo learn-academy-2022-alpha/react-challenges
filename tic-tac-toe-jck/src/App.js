@@ -29,6 +29,8 @@ class App extends Component{
     }
   }
 
+
+
   render(){
     return(
       <>
@@ -36,7 +38,11 @@ class App extends Component{
         <div id="gameboard">
           {this.state.squares.map((value,index)=>{
             return (
-            <Square />
+            <Square
+              value = {value}
+              index = {index}
+              {...this.state.handleClick}
+            />
             )
           })}
         </div>
