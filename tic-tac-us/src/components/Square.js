@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 class Square extends Component{
 handleClick = () => {
+    
 this.props.handleMoves(this.props.index)
 }
 
