@@ -26,11 +26,20 @@ class App extends Component{
     super(props)
     this.state = {
       squares: [0, 0, 0, 0, 0, 0, 0, 0, 0],
+      playerOne: "X",
+      playerTwo: "O",
     }
   }
 
-  handleGame = () => {
-    alert ("yo")
+
+  handleGame = (index) => {
+    const {squares, playerOne, playerTwo} = this.state
+    if (){
+      squares[index] = "X"
+      this.setState({squares: squares})
+}
+      squares[index] = "O"
+      this.setState({squares: squares})
   }
 
 
@@ -44,6 +53,7 @@ class App extends Component{
             <Square
                 value = {value}
                 index = {index}
+                handleGame={this.handleGame}
               />
             )
           })}
