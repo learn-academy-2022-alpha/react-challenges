@@ -25,23 +25,36 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      squares: [0, 0, 0, 0, 0, 0, 0, 0, 0],
+      squares: ["n", "n", "n", "n", "n", "n", "n", "n", "n"],
       playerOne: "X",
       playerTwo: "O",
     }
   }
+  // if player state player one
+  // - when click character changes to X
+  // - add X to the squares array of that index you clicked
+  // - switch state to player two
+  // else (player two's turn)
+  // - when click character changes to O
+  // - add O to the squares array of that index you clicked
+  // - switch state to player one
 
+  // win condition function
+  // if X meets certain win combinations here (checking the combinations in player one array), then player one wins
+  // else if O meets certain win combinations here (checking combinations in player two array) then player two wins
+  // else draw
 
   handleGame = (index) => {
-    const {squares, playerOne, playerTwo} = this.state
-    if (){
+  const {squares} = this.state
+    if (squares[index] === "n" || squares[index] === "O" ){
       squares[index] = "X"
       this.setState({squares: squares})
 }
+    else if ( squares[index] === "X" ){
       squares[index] = "O"
       this.setState({squares: squares})
+    }
   }
-
 
   render(){
     return(
