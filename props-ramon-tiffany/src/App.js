@@ -6,7 +6,7 @@ class App extends Component{
     this.state = {
       diceSides: [1, 2, 3, 4, 5, 6],
       currentRoll: "",
-      //previousRoll: [],
+      previousRoll: [],
     }
   }
 
