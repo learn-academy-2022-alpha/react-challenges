@@ -6,7 +6,7 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      squares: [null, null, null, null, null, null, null,  null, null],
+      squares: ["pick", "pick", "pick", "pick", "pick", "pick", "pick",  "pick", "pick"],
       xIsNext: true
     }
   }
@@ -22,32 +22,33 @@ handleMoves = (index) => {
 
 winnerPath = () => {
   const {squares} = this.state
-  let lines = [
-    [squares[0], squares[1], squares[2]],
-    // [3, 4, 5],
-    // [6, 7, 8],
-    // [0, 3, 6],
-    // [1, 4, 7],
-    // [2, 5, 8],
-    // [0, 4, 8],
-    // [2, 4, 6],
-  ];
-  for (let index = 0; index < lines.length; index++) {
-    const [a, b, c] = lines[index];
+  let path = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ]
+  for (let index = 0; index < path.length; index++) {
+    const [a, b, c] = path[index]
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a];
+      return squares[a]
     }
   }
-  return null;
+  return null
 }
 
   render(){
-    const winner = this.winnerPath(this.state.squares);
+    const {squares , xIsNext } = this.state
+    const winner = this.winnerPath(squares)
     let status;
     if (winner) {
-      status = 'Winner: ' + winner;
+      status = 'Winner: ' + winner
     } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+     status = 'Next player: ' + (xIsNext ? 'X' : 'O')
     }
    
     return(
@@ -58,6 +59,7 @@ winnerPath = () => {
         {this.state.squares.map((value, index) => {
           return (
           <Square 
+          key = {index}
           value = {value}
           index = {index}
           handleMoves = {this.handleMoves}
