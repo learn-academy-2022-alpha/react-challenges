@@ -1,0 +1,85 @@
+.game {
+  font: 50px 'Arial', Helvetica, sans-serif;
+  margin-left: 150px;
+  margin-top: 50px;
+  min-height: 260px;
+}
+
+.game ol,
+.game ul {
+  padding-left: 30px;
+}
+
+.row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.restart {
+  height: 50px;
+  width: 100px;
+  margin-top: 10px;
+  box-shadow: 5px 5px black;
+}
+
+.square {
+  background: #fff;
+  border: 6px solid black;
+  float: left;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 250px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 250px;
+  opacity: 70%;
+}
+
+.square:focus {
+  outline: none;
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.game-info {
+  margin-left: 20px;
+  min-width: 190px;
+}
+
+
+body {
+  /* The image used */
+  background-image: url(./xo.jpeg);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: right;
+  background-size: cover;
+}
+
+.status {
+  text-align: center;
+}
+
+span {
+  background: #fff;
+  border: 5px solid black;
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 70%;
+}
