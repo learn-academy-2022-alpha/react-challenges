@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Intro to React</title>
+
+</head>
+<body>
+  <h1>Alpha 2022 Cohort</h1>
+    <h2>Featuring!</h2>
+      <ol>
+      Curtis,
+      Jacob,
+      Ramon,
+      Ryan,
+      Athen,
+      Keelan,
+      Marc,
+      Michael,
+      Tiffany,
+      Dane,
+      Arnold,
+      Jose,
+      Nico,
+      Stevie,
+      Alexis,
+      Kat,
+      Kendra,
+      Carlos,
+      Omar,
+      Jennice,
+      Paula,
+      Mariana,
+      Nathaniel
+      </ol>
+
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <></>
+        )
+      }
+    }
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+  </script>
+</body>
+<footer>"Made by Kat & Kendra"</footer>
+</html>
