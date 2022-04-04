@@ -1,0 +1,149 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#square {
+  height: 350px;
+  width: 350px;
+  border-style: solid;
+  border-width: thin;
+  border-radius:25px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 10px
+}
+
+#text {
+  height: 35px;
+  width: 75px;
+  color: black;
+  text-decoration: #FFFFFF;
+  border-radius:20px;
+  border-style: dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Syne Mono', monospace;
+}
+
+#morphinTime {
+  height: 500px;
+  border-radius:25px;
+  width: 350px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 10px
+
+}
+
+a.button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.3em solid #FFFFFF;
+  width: 175px;
+  border-radius:25px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-align:center;
+  transition: all 0.2s;
+  background-color: #DAFBFF;
+  margin-left: 15px;
+  padding: 25px;
+  font-family: 'Syne Mono', monospace;
+  box-shadow: 5px 10px
+
+}
+a.button1:hover{
+  color:#000000;
+  background-color:#00FFFF;
+}
+@media all and (max-width:30em){
+  a.button1{
+    display:block;
+    margin: 0.4em auto;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+body{
+  background:#fff;
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+}
+.box{
+  margin:25px;
+  width:250px;
+  height:250px;
+  background:#fff;
+
+  float:left;
+}
+
+
+.box2{
+  width:350px;
+  border-width: 3px 3px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+  transform: rotate(-2deg);
+}
+
+
+
+.oddboxinner{
+  margin:15px;
+  transform: rotate(-2deg);
+}
+.evenboxinner{
+  transform: rotate(2deg);
+  margin:15px;
+  padding:0 5px;
+  float:right;
+  background:#ddd;
+  border:1px solid #222;
+  box-shadow:3px 3px 0 #222;
+}
